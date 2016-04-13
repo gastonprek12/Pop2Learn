@@ -20,8 +20,9 @@ public class LoginController : MonoBehaviour {
 
 		// Do we need to do some previous validation??
 
-		// Do login here against the API
+		// Do login here against the API (And delete debug)
 		Debug.Log(string.Format("user: {0}  pass: {1}", username, password));
+
 	}
 
 	/// <summary>
@@ -37,5 +38,17 @@ public class LoginController : MonoBehaviour {
 	void IncorrectLogin()
 	{
 		// Show some message?
+	}
+
+	// TODO:
+	public void ForgotPassword()
+	{
+		
+	}
+
+	// TODO:
+	public void SignUp()
+	{
+		
 	}
 }
