@@ -7,6 +7,8 @@ public class LoginController : MonoBehaviour {
 
 	public UIInput Password_Input;
 
+	public UIInput ForgotPass_Input;
+
 	/// <summary>
 	/// Method that gets called when the user presses Login
 	/// </summary>
@@ -22,6 +24,8 @@ public class LoginController : MonoBehaviour {
 
 		// Do login here against the API (And delete debug)
 		Debug.Log(string.Format("user: {0}  pass: {1}", username, password));
+
+		CorrectLogin ();
 
 	}
 
@@ -43,7 +47,8 @@ public class LoginController : MonoBehaviour {
 	// TODO:
 	public void ForgotPassword()
 	{
-		
+		// Grab the email to use to send the email of the forgot pass
+		string emailToSendForgot = ForgotPass_Input.value;
 	}
 
 	// TODO:
